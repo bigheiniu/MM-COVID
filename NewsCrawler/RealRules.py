@@ -710,7 +710,7 @@ def page_in_animalpolitico(driver, url):
 
     for url in urls_html:
         title = url.get_attribute("title")
-        author = url.get_attribute("data-author")
+        author = url.get_attribute("figure-author")
         url_link = url.get_attribute("href")
 
         info_list.append({
@@ -1098,7 +1098,7 @@ def page_in_perma(driver=None, url=None):
     driver.get(url)
     response = requests.get(url)
     tree = html.fromstring(response.content)
-    th = tree.xpath("//div[@data-testid='post_message']//text()")
+    th = tree.xpath("//div[@figure-testid='post_message']//text()")
     text_content = []
     text_set = set()
     for i in th:

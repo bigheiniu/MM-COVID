@@ -334,7 +334,7 @@ def crawl_link_article(url, inner_html=None):
                     article.parse()
                     flag = True
                 except:
-                    logging.exception("Exception in getting data from url {}".format(url))
+                    logging.exception("Exception in getting figure from url {}".format(url))
                     flag = False
                     pass
                 if flag == False:
@@ -345,7 +345,7 @@ def crawl_link_article(url, inner_html=None):
                         article.parse()
                         flag = True
                     except:
-                        logging.exception("Exception in getting data from url {}".format(url))
+                        logging.exception("Exception in getting figure from url {}".format(url))
                         flag = False
                         pass
                 if flag == False:
@@ -357,7 +357,7 @@ def crawl_link_article(url, inner_html=None):
                     time.sleep(2)
                     article.parse()
                 except:
-                    logging.exception("Exception in getting data from url {}".format(url))
+                    logging.exception("Exception in getting figure from url {}".format(url))
                     return None
 
             if not article.is_parsed:
@@ -427,7 +427,7 @@ def crawl_link_politifact(url):
                 article.parse()
                 flag = True
             except:
-                logging.exception("Exception in getting data from url {}".format(url))
+                logging.exception("Exception in getting figure from url {}".format(url))
                 flag = False
                 pass
             if flag == False:
@@ -438,7 +438,7 @@ def crawl_link_politifact(url):
                     article.parse()
                     flag = True
                 except:
-                    logging.exception("Exception in getting data from url {}".format(url))
+                    logging.exception("Exception in getting figure from url {}".format(url))
                     flag = False
                     pass
             if flag == False:
@@ -450,7 +450,7 @@ def crawl_link_politifact(url):
                 time.sleep(2)
                 article.parse()
             except:
-                logging.exception("Exception in getting data from url {}".format(url))
+                logging.exception("Exception in getting figure from url {}".format(url))
                 return None
 
         if not article.is_parsed:
@@ -474,7 +474,7 @@ def crawl_link_politifact(url):
                 resource_artile.parse()
                 resource_statement_list.append(resource_artile.title)
             except:
-                logging.exception("Exception in getting the resource data url {}".format(a.attrs['href']))
+                logging.exception("Exception in getting the resource figure url {}".format(a.attrs['href']))
 
         # ATTENTION: Yichuan Cannot find the ID for the crawled news, so he used the hash256 for the statement as the id
         # ATTENTION: Question about the statement
