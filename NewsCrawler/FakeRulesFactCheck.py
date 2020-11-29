@@ -457,7 +457,7 @@ def rule_based_crawl(fact_site_url, driver, domain, claim=None, url_require=None
             # get the embed URL:
             try:
                 twitter_id = driver.find_element_by_xpath(
-                    "//div[@class='twitter-tweet twitter-tweet-rendered']").get_attribute("data-tweet-id")
+                    "//div[@class='twitter-tweet twitter-tweet-rendered']").get_attribute("figure-tweet-id")
                 if len(str(twitter_id)) > 0:
                     url_list = [("twitter", "https://twitter.com/i/web/status/{}".format(twitter_id))]
             except:

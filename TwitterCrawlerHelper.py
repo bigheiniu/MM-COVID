@@ -39,7 +39,7 @@ def get_replies(conversation_id, screen_name, created_at):
         twint.run.Search(replies)
         df = pd.DataFrame([vars(i) for i in replies.Store_object_tweets_list])
         replies.search_tweet_list = []
-        df = df.rename(columns={"data-conversation-id":"conversation_id","date":"created_at","data-item-id":"id"})
+        df = df.rename(columns={"figure-conversation-id":"conversation_id","date":"created_at","figure-item-id":"id"})
         df.drop_duplicates(inplace=True, subset=['id_str'])
         if len(df) == 0:
             time_delta = 2 * time_delta
