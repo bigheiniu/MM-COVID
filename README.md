@@ -9,7 +9,7 @@ The data is stored at [Google Drive](https://drive.google.com/drive/folders/1gd4
 - news_tweet_relation.json: this file stores the dicussion of the news content from Twitter
 - tweet_tweet_relation.json: this file stores the retweets, recursively replies of the tweets.
 
-Due to the Twitter privacy concerns, we only provide the twitter ID for the tweets, you can utilize [Twarc](https://github.com/DocNow/twarc) to **Hydrate** the tweet IDs. 
+Due to the Twitter privacy concerns, we only provide the twitter IDs for the tweets, you can utilize [Twarc](https://github.com/DocNow/twarc) to **Hydrate** these tweet IDs. 
 
 ## Crawling Pipeline
 This code stored the data into MongoDB. You should pre-install MongoDB before running the code. 
