@@ -18,13 +18,13 @@ The main file is __FakeNewsCrawler.py__ and the pipeline of this file is as:
 
 ![pipeline](./figure/pipeline.png)
 
-####Setup
+#### Setup
 
 Mongo db setup - https://docs.mongodb.com/tutorials/install-mongodb-on-ubuntu/
 
 Firefox driver - Geckodriver installation - https://askubuntu.com/questions/870530/how-to-install-geckodriver-in-ubuntu
 
-####WorkFlow
+#### WorkFlow
 1. Use crawler to get all the fake news from the Factchecking server. 
 2. Fetch the html page of the source provided in the article and parse and get the "title" of the article
 3. Using the title fetched in the previous step and Twitter's advanced search API get tweets matching title using web scrapping
@@ -32,7 +32,7 @@ Firefox driver - Geckodriver installation - https://askubuntu.com/questions/8705
 5. For all the users who tweeted those fake tweets, gather the social network information like followers, followees.
 
 ## Installation
-###Requirements： 
+### Requirements： 
 Credits for [FakeNewsNet](https://github.com/KaiDMML/FakeNewsNet).
 
 Data download scripts are writtern in python and requires python 3.6 + to run. 
