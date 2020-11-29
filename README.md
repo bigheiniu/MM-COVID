@@ -1,5 +1,5 @@
 # MM-COVID
-Multilingual and Multimodal COVID-19 Fake News Dataset
+[Multilingual and Multimodal COVID-19 Fake News Dataset](https://arxiv.org/abs/2011.04088)
 
 ## Data Structure
 
