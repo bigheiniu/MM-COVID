@@ -70,5 +70,5 @@ If you use this dataset, please cite the following paper:
       eprint={2011.04088},
       archivePrefix={arXiv},
       primaryClass={cs.SI}}
-If you have any questions about this dataset, please contact Yichuan Li (yli@wpi.edu).
+If you have any questions about this dataset, please contact Yichuan Li (yli29@wpi.edu).
   
